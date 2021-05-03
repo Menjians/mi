@@ -14,19 +14,17 @@
 		</view>
 		<view class="nav">
 			<ul>
-				<li><text class="active">推荐</text></li>
-				<li><text>手机</text></li>
-				<li><text>智能</text></li>
-				<li><text>电视</text></li>
-				<li><text>家电</text></li>
-				<li><text>笔记本</text></li>
+				<li><text :class="{active:navIndex===-1}" @click="changeNav(-1)">推荐</text></li>
+				<li v-for="(item,index) in navItems"  :key="index" @click="changeNav(index)">
+					<text :class="{active:navIndex===index}">{{item}}</text>
+				</li>
 			</ul>
 		</view>
 		<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" 
 		indicator-active-color="#fff" indicator-color="#ccc">
 			<swiper-item>
 				<view class="swiper-item">
-					<image src="../../static/img/K40.jpg"></image>
+					<image src="../../static/img/xiaomiUltra.jpg"></image>
 				</view>
 			</swiper-item>
 			<swiper-item>
@@ -42,11 +40,14 @@
 	export default {
 		data() {
 			return {
-
+				navItems:["手机","智能","电视","家电","笔记本"],
+				navIndex:-1
 			}
 		},
 		methods: {
-
+			changeNav(index){
+				this.navIndex = index
+			}
 		}
 	}
 </script>
@@ -88,7 +89,7 @@
 				}
 				.active{
 					color: #ff6700;
-					border-bottom: 1rpx solid #ff6700;
+					border-bottom: 2px solid #ff6700;
 				}
 			}
 		}
