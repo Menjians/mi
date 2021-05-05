@@ -1,34 +1,38 @@
 <template>
   <view>
-    <view class="header">
-      <view class="logo">
-        <image src="../../static/img/logo.png" mode=""></image>
-      </view>
-      <view class="search">
-        <image src="../../static/img/search.png"></image>
-        <text>搜索商品名称</text>
-      </view>
-      <view class="user">
-        <image src="../../static/icon/user.png" mode=""></image>
-      </view>
-    </view>
-    <view class="nav">
-      <ul>
-        <li>
-          <text :class="{ active: navIndex === -1 }" @click="changeNav(-1)"
-            >推荐</text
-          >
-        </li>
-        <li
-          v-for="(item, index) in navItems"
-          :key="index"
-          @click="changeNav(index)"
-        >
-          <text :class="{ active: navIndex === index }">{{ item }}</text>
-        </li>
-      </ul>
+			<view class="topbanner">
+				<view class="header">
+					<view class="logo">
+						<image src="../../static/img/logo.png" mode=""></image>
+					</view>
+					<view class="search">
+						<image src="../../static/img/search.png"></image>
+						<text>搜索商品名称</text>
+					</view>
+					<view class="user">
+						<image src="../../static/icon/user.png" mode=""></image>
+					</view>
+				</view>
+				<view class="nav">
+				<ul>
+					<li>
+						<text :class="{ active: navIndex === -1 }" @click="changeNav(-1)"
+							>推荐</text
+						>
+					</li>
+					<li
+						v-for="(item, index) in navItems"
+						:key="index"
+						@click="changeNav(index)"
+					>
+						<text :class="{ active: navIndex === index }">{{ item }}</text>
+					</li>
+				</ul>
+			</view>
 		</view>
-    <Recommend></Recommend>
+		<view class="recom">
+			 <Recommend></Recommend>
+		</view>
   </view>
 </template>
 
@@ -53,7 +57,18 @@ export default {
 </script>
 
 <style lang="less">
-
+	.topbanner{
+		background-color: #f2f2f2;
+		top: 0;
+		left: 0;
+		position: fixed;
+		width: 100%;
+		height: 73.76*2rpx;
+		z-index: 1;
+	}
+.recom{
+	margin-top: 73.76*2rpx;
+}
 * {
   margin: 0;
   padding: 0;
