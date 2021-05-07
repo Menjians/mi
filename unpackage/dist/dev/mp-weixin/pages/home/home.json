@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "recommend": "/pages/recommend/recommend",
+    "bijiben": "/pages/cateLists/bijiben/bijiben",
+    "dianshi": "/pages/cateLists/dianshi/dianshi",
+    "zhineng": "/pages/cateLists/zhineng/zhineng",
+    "jiadian": "/pages/cateLists/jiadian/jiadian",
+    "shouji": "/pages/cateLists/shouji/shouji"
+  }
+}

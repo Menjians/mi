@@ -31,26 +31,43 @@
 			</view>
 		</view>
 		<view class="recom">
-			 <Recommend></Recommend>
+			<Recommend v-if="cateListIndex ===-1"></Recommend>
+      <Shouji v-if="cateListIndex ===0"></Shouji>
+      <Zhineng v-if="cateListIndex ===1"></Zhineng>
+      <Dianshi v-if="cateListIndex ===2"></Dianshi>
+      <Jiadian v-if="cateListIndex ===3"></Jiadian>
+      <Bijiben v-if="cateListIndex ===4"></Bijiben>
 		</view>
   </view>
 </template>
 
 <script>
 import Recommend from "../recommend/recommend.vue";
+import Bijiben from '../cateLists/bijiben/bijiben.vue';
+import Dianshi from '../cateLists/dianshi/dianshi.vue';
+import Shouji from '../cateLists/shouji/shouji.vue';
+import Jiadian from '../cateLists/jiadian/jiadian.vue';
+import Zhineng from '../cateLists/zhineng/zhineng.vue';
 export default {
   components: {
     Recommend,
+    Bijiben,
+    Dianshi,
+    Zhineng,
+    Jiadian,
+    Shouji
   },
   data() {
     return {
       navItems: ["手机", "智能", "电视", "家电", "笔记本"],
       navIndex: -1,
+			cateListIndex:-1
     };
   },
   methods: {
     changeNav(index) {
       this.navIndex = index;
+			this.cateListIndex = index
     },
   },
 };
