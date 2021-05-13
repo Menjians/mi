@@ -45,7 +45,6 @@
 				<view class="smallimg">
 					<view class="pos">
 						<image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/20d970b239e6b7152d07b6282e160192.jpg?thumb=1&w=221&h=221" mode=""></image>
-						<image class="mx" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/57817f3ee2b04f655c5d98c255ed9a9a.png?w=167&h=167" mode=""></image>
 					</view>
 				</view>
 				<view class="info">
@@ -60,7 +59,6 @@
 				<view class="smallimg">
 					<view class="pos">
 						<image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c1bb566a499a4691cf878bb3ac23c056.jpg?thumb=1&w=221&h=221" mode=""></image>
-						<image class="mx" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/57817f3ee2b04f655c5d98c255ed9a9a.png?w=167&h=167" mode=""></image>
 					</view>
 				</view>
 				<view class="info">
@@ -75,7 +73,6 @@
 				<view class="smallimg">
 					<view class="pos">
 						<image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/abf7219dc5dd88a5a425e05d66459c1e.jpg?thumb=1&w=221&h=221" mode=""></image>
-						<image class="mx" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/57817f3ee2b04f655c5d98c255ed9a9a.png?w=167&h=167" mode=""></image>
 					</view>
 				</view>
 				<view class="info">
