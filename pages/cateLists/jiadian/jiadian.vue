@@ -11,6 +11,98 @@
 			<view>
 				<view class="smallimg">
 					<view class="pos">
+						<image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/593297cb6ab94c8e26354f198032a97e.jpg?thumb=1&w=221&h=221" mode=""></image>
+						<image class="mx" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82a33669051a00b50f5fa5fb1ea2a3f8.png?w=167&h=167" mode=""></image>
+					</view>
+				</view>
+				<view class="info">
+					<text class="name">柔风新一级 3匹</text>
+					<text class="text">自动清洁，焕然一新的好空气</text>
+					<view>
+						<text class="price">¥5199</text> <text class="old-price">¥5999</text>
+					</view>
+				</view>
+			</view>
+			<view>
+				<view class="smallimg">
+					<view class="pos">
+						<image src="https://i8.mifile.cn/v1/a1/7c344df9-3cbd-8627-d815-8fbbcbd6d033.webp" mode=""></image>
+						<image class="mx" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/57817f3ee2b04f655c5d98c255ed9a9a.png?w=167&h=167" mode=""></image>
+					</view>
+				</view>
+				<view class="info">
+					<text class="name">波轮洗衣机1S</text>
+					<text class="text">小身材大容量，可预约</text>
+					<view>
+						<text class="price">¥899</text>
+					</view>
+				</view>
+			</view>
+			<view>
+				<view class="smallimg">
+					<view class="pos">
+						<image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4ffb5142d3818bc5b23d5b1804a7618d.jpg?thumb=1&w=221&h=221" mode=""></image>
+						<image class="mx" src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/f48b677631fd8573c1046da6fe9c1e6a.png?w=167&h=167" mode=""></image>
+					</view>
+				</view>
+				<view class="info">
+					<text class="name">米家互联网直驱洗烘一体机  10kg</text>
+					<text class="text">微蒸空气洗</text>
+					<view>
+						<text class="price">¥2799</text> <text class="old-price">¥3299</text>
+					</view>
+				</view>
+			</view>
+		</view><view class="Tvlist">
+			<view>
+				<view class="smallimg">
+					<view class="pos">
+						<image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b847dba485b395c897363804f5e0b6a.jpg?thumb=1&w=221&h=221" mode=""></image>
+						<image class="mx" src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/f44c2a5c2f28b657ad9c9d0babd60453.png?w=167&h=167" mode=""></image>
+					</view>
+				</view>
+				<view class="info">
+					<text class="name">十字门冰箱 486L</text>
+					<text class="text">风冷无霜，长久保鲜</text>
+					<view>
+						<text class="price">¥2899</text> <text class="old-price">¥3499</text>
+					</view>
+				</view>
+			</view>
+			<view>
+				<view class="smallimg">
+					<view class="pos">
+						<image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/23767bde3bed426b075aecc907c61936.JPG?thumb=1&w=221&h=221" mode=""></image>
+						<image class="mx" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/563d97f73fdb772e8d5a91e7a2306b62.png?w=167&h=167" mode=""></image>
+					</view>
+				</view>
+				<view class="info">
+					<text class="name">冰箱540L</text>
+					<text class="text">重磅新品福利特惠</text>
+					<view>
+						<text class="price">¥2899</text> <text class="old-price">¥3699</text>
+					</view>
+				</view>
+			</view>
+			<view>
+				<view class="smallimg">
+					<view class="pos">
+						<image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ace8e2c830bd0def0f6d2cf4efa665cc.jpg?thumb=1&w=221&h=221" mode=""></image>
+						<image class="mx" src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/bbc463a85374082f855396e8327e48b4.png?w=167&h=167" mode=""></image>
+					</view>
+				</view>
+				<view class="info">
+					<text class="name">三门冰箱215L</text>
+					<text class="text">三温区高效保鲜</text>
+					<view>
+						<text class="price">¥1299</text> <text class="old-price">¥1499</text>
+					</view>
+				</view>
+			</view>
+		</view><view class="Tvlist">
+			<view>
+				<view class="smallimg">
+					<view class="pos">
 						<image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/20d970b239e6b7152d07b6282e160192.jpg?thumb=1&w=221&h=221" mode=""></image>
 						<image class="mx" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/57817f3ee2b04f655c5d98c255ed9a9a.png?w=167&h=167" mode=""></image>
 					</view>
@@ -73,6 +165,8 @@
 <style lang="less" scoped>
 	.container{
 		background-color: #E14139;
+		padding: 0 15rpx;
+		height: 100%;
 	}
 image{
 	vertical-align: bottom;
@@ -80,13 +174,14 @@ image{
 .Tvlist{
 	display: flex;
 	width: 100%;
+	margin-bottom: 15rpx;
 	flex-wrap: wrap;
-	margin: 0 16rpx;
 	justify-content: space-between;
 	.smallimg{
 		width: 115.09 * 2rpx;
 		height: 115.09 * 2rpx;
 		.pos{
+			position: relative;
 			image{
 				width: 115.09 * 2rpx;
 				height: 115.09 * 2rpx;
