@@ -31,12 +31,14 @@
 			</view>
 		</view>
 		<view class="recom">
-			<Recommend v-if="cateListIndex ===-1"></Recommend>
-      <Shouji v-if="cateListIndex ===0"></Shouji>
-      <Zhineng v-if="cateListIndex ===1"></Zhineng>
-      <Dianshi v-if="cateListIndex ===2"></Dianshi>
-      <Jiadian v-if="cateListIndex ===3"></Jiadian>
-      <Bijiben v-if="cateListIndex ===4"></Bijiben>
+			<transition>
+				<Recommend v-if="cateListIndex ===-1"></Recommend>
+				<Shouji v-if="cateListIndex ===0"></Shouji>
+				<Zhineng v-if="cateListIndex ===1"></Zhineng>
+				<Dianshi v-if="cateListIndex ===2"></Dianshi>
+				<Jiadian v-if="cateListIndex ===3"></Jiadian>
+				<Bijiben v-if="cateListIndex ===4"></Bijiben>
+			</transition>
 		</view>
   </view>
 </template>
