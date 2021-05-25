@@ -30,16 +30,14 @@
 				</ul>
 			</view>
 		</view>
-		<view class="recom">
-			<transition>
+		<scroll-view class="recom">
 				<Recommend v-if="cateListIndex ===-1"></Recommend>
 				<Shouji v-if="cateListIndex ===0"></Shouji>
 				<Zhineng v-if="cateListIndex ===1"></Zhineng>
 				<Dianshi v-if="cateListIndex ===2"></Dianshi>
 				<Jiadian v-if="cateListIndex ===3"></Jiadian>
 				<Bijiben v-if="cateListIndex ===4"></Bijiben>
-			</transition>
-		</view>
+		</scroll-view>
   </view>
 </template>
 
@@ -85,8 +83,10 @@ export default {
 		height: 73.76*2rpx;
 		z-index: 1;
 	}
+	
 .recom{
 	margin-top: 73.76*2rpx;
+	height: calc(100vh - 73.76*2rpx - 100rpx);
 }
 * {
   margin: 0;
